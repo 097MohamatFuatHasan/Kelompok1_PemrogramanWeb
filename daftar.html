@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/logoweb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Daftar Film</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="daftar.html">Daftar Film</a></li>
+            <li><a href="info.html">Info</a></li>
+        </ul>
+    </nav>
+    <h1>Jadwal Film</h1>
+    <div class="film-container">
+        <div class="film-card" onclick="showDetails('Ant-Man', '10:00', 'assets/antman.jpg')">
+            <h2>Ant-Man</h2>
+            <img src="assets/antman.jpg" alt="Ant-Man" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="01/01/2023"></span></p>
+            <p>Jam: 10:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Ant-Man (2015) adalah film superhero dari Marvel Cinematic Universe (MCU) yang mengisahkan Scott Lang, seorang pencuri yang direkrut oleh ilmuwan jenius, Dr. Hank Pym.</span>
+                <span class="synopsis-preview">Ant-Man adalah film superhero dari MCU...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Avengers: Endgame', '12:00', 'assets/avenger.jpg')">
+            <h2>Avengers: Endgame</h2>
+            <img src="assets/avenger.jpg" alt="Avengers: Endgame" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="01/01/2023"></span></p>
+            <p>Jam: 12:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Avengers: Endgame (2019) adalah film superhero yang merupakan bagian dari Marvel Cinematic Universe, di mana para pahlawan berusaha membalikkan kerusakan yang dilakukan oleh Thanos.</span>
+                <span class="synopsis-preview">Avengers: Endgame adalah film superhero yang epik...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('The Dark Knight', '14:00', 'assets/batman.jpg')">
+            <h2>The Dark Knight</h2>
+            <img src="assets/batman.jpg" alt="The Dark Knight" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="01/01/2023"></span></p>
+            <p>Jam: 14:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">The Dark Knight (2008) adalah film superhero yang mengikuti Batman saat ia berjuang melawan Joker, penjahat yang ingin menimbulkan kekacauan di Gotham City.</span>
+                <span class="synopsis-preview">The Dark Knight adalah film superhero yang mendebarkan...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Dune', '10:00', 'assets/dune.jpg')">
+            <h2>Dune</h2>
+            <img src="assets/dune.jpg" alt="Dune" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="02/01/2023"></span></p>
+            <p>Jam: 10:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Dune (2021) adalah film fiksi ilmiah yang mengikuti Paul Atreides saat ia berjuang untuk melindungi planet yang berharga dan menghadapi berbagai ancaman.</span>
+                <span class="synopsis-preview">Dune adalah film fiksi ilmiah yang epik...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Everything Everywhere All At Once', '12:00', 'assets/everything.jpg')">
+            <h2>Everything Everywhere All At Once</h2>
+            <img src="assets/everything.jpg" alt="Everything Everywhere All At Once" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="02/01/2023"></span></p>
+            <p>Jam: 12:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Everything Everywhere All At Once (2022) adalah film yang mengisahkan seorang wanita yang terjebak dalam multiverse dan harus menyelamatkan dunia.</span>
+                <span class="synopsis-preview">Everything Everywhere All At Once adalah film yang unik...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Infinite Storm', '14:00', 'assets/infinite.jpg')">
+            <h2>Infinite Storm</h2>
+            <img src="assets/infinite.jpg" alt="Infinite Storm" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="02/01/2023"></span></p>
+            <p>Jam: 14:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Infinite Storm (2022) adalah film yang mengikuti seorang pendaki yang terjebak dalam badai salju dan harus berjuang untuk bertahan hidup.</span>
+                <span class="synopsis-preview">Infinite Storm adalah film yang menegangkan...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Joker', '10:00', 'assets/joker.jpg')">
+            <h2>Joker</h2>
+            <img src="assets/joker.jpg" alt="Joker" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="03/01/2023"></span></p>
+            <p>Jam: 10:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Joker (2019) adalah film yang menceritakan asal-usul karakter Joker, seorang komedian yang terjebak dalam dunia kejahatan.</span>
+                <span class="synopsis-preview">Joker adalah film yang mendalam dan emosional...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Lightyear', '12:00', 'assets/lightyear.jpg')">
+            <h2>Lightyear</h2>
+            <img src="assets/lightyear.jpg" alt="Lightyear" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="03/01/2023"></span></p>
+            <p>Jam: 12:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Lightyear (2022) adalah film yang mengikuti petualangan Buzz Lightyear, karakter ikonik dari Toy Story.</span>
+                <span class="synopsis-preview">Lightyear adalah film yang penuh petualangan...</span>
+            </p>
+        </div>
+        <div class="film-card" onclick="showDetails('Morbius', '14:00', 'assets/morbius.jpg')">
+            <h2>Morbius</h2>
+            <img src="assets/morbius.jpg" alt="Morbius" style="width:200px; height:300px; border-radius: 5px;">
+            <p>Tanggal: <span class="film-date" data-date="03/01/2023"></span></p>
+            <p>Jam: 14:00</p>
+            <p>
+                <span class="synopsis" style="display: none;">Morbius (2022) adalah film yang mengikuti seorang ilmuwan yang mencoba menyembuhkan dirinya sendiri dan berubah menjadi vampir.</span>
+                <span class="synopsis-preview">Morbius adalah film yang gelap dan misterius...</span>
+            </p>
+        </div>
+    </div>
+    
+    <div id="film-popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <img id="popup-image" src="" alt="" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+            <h2 id="popup-title"></h2>
+            <p id="popup-date"></p>
+            <p id="popup-time"></p>
+            <p id="popup-synopsis"></p> <!-- Menampilkan sinopsis lengkap di popup -->
+        </div>
+    </div>
+
+    <script>
+    function showDetails(title, time, image) {
+        const today = new Date();
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+        const formattedDate = today.toLocaleDateString('id-ID', options); // Format tanggal sesuai dengan format Indonesia
+
+        document.getElementById('popup-title').innerText = title;
+        document.getElementById('popup-date').innerText = 'Tanggal: ' + formattedDate; // Tanggal dinamis di popup
+        document.getElementById('popup-time').innerText = 'Jam: ' + time;
+        document.getElementById('popup-image').src = image; // Set gambar di popup
+
+        // Menampilkan sinopsis lengkap di popup
+        const synopsis = document.querySelector(`.film-card[onclick*="${title}"] .synopsis`).innerText;
+        document.getElementById('popup-synopsis').innerText = synopsis; // Set sinopsis lengkap di popup
+
+        document.getElementById('film-popup').style.display = 'flex'; // Tampilkan popup
+    }
+
+    // Menutup popup ketika area di luar popup diklik
+    document.getElementById('film-popup').addEventListener('click', function(event) {
+        if (event.target === this) {
+            this.style.display = 'none'; // Sembunyikan popup
+        }
+    });
+
+    function closePopup() {
+        document.getElementById('film-popup').style.display = 'none'; // Sembunyikan popup
+    }
+
+    function updateFilmDates() {
+        const today = new Date();
+        const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+        const formattedDate = today.toLocaleDateString('id-ID', options); // Format tanggal sesuai dengan format Indonesia
+
+        // Mengupdate semua elemen dengan kelas 'film-date'
+        const filmDates = document.querySelectorAll('.film-date');
+        filmDates.forEach(dateElement => {
+            dateElement.innerText = formattedDate; // Set tanggal ke elemen
+        });
+    }
+
+    // Panggil fungsi untuk mengupdate tanggal saat halaman dimuat
+    updateFilmDates();
+    </script>
+</body>
+</html>
