@@ -2,20 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #C8ACD6; 
+    background-color: #C8ACD6; /* Warna latar belakang halaman */
 }
 
 nav {
-    background-color: #17153B; 
+    background-color: #17153B; /* Warna latar belakang navbar */
     color: white;
     padding: 10px;
-    text-align: center; 
+    text-align: center; /* Memusatkan navbar */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: inline-block; 
+    display: inline-block; /* Membuat ul menjadi inline-block */
 }
 
 nav ul li {
@@ -24,56 +24,75 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #C8ACD6;
+    color: #C8ACD6; /* Warna tautan */
     text-decoration: none;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease; /* Transisi warna tautan */
 }
 
 nav ul li a:hover {
-    color: #433D8B; 
+    color: #433D8B; /* Warna tautan saat hover */
 }
 
 h1 {
-    color: #2E236C; 
-    text-align: center; 
-    animation: fadeIn 1s; 
+    color: #2E236C; /* Warna teks h1 */
+    text-align: center; /* Memusatkan teks h1 */
+    animation: fadeIn 1s; /* Animasi muncul untuk h1 */
+}
+
+h2 {
+    color: #2E236C; /* Warna teks h1 */
+    text-align: center; /* Memusatkan teks h1 */
+    animation: fadeIn 1s; /* Animasi muncul untuk h1 */
+}
+
+h3 {
+    color: #2E236C; /* Warna teks h1 */
+    text-align: center; /* Memusatkan teks h1 */
+    animation: fadeIn 1s; /* Animasi muncul untuk h1 */
+}
+
+h4 {
+    color: #2E236C; /* Warna teks h1 */
+    text-align: center; /* Memusatkan teks h1 */
+    animation: fadeIn 1s; /* Animasi muncul untuk h1 */
 }
 
 p {
-    text-align: center; 
-    color: #17153B;
-    animation: fadeIn 1.5s; 
+    text-align: center; /* Memusatkan teks paragraf */
+    color: #17153B; /* Warna teks paragraf */
+    animation: fadeIn 1.5s; /* Animasi muncul untuk paragraf */
 }
 
 .film-container {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; /
-    margin: 20px;
+    justify-content: center; /* Memusatkan kartu film */
+    flex-wrap: wrap; /* Membuat kartu film membungkus jika terlalu banyak */
+    margin: 20px; /* Margin di sekitar kontainer */
 }
 
 .film-card {
-    background-color: #FFFFFF;
-    border: 1px solid #433D8B; 
-    border-radius: 5px; 
-    padding: 15px; 
-    margin: 10px; 
-    width: 200px; 
-    text-align: center; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    background-color: #FFFFFF; /* Warna latar belakang kartu */
+    border: 1px solid #433D8B; /* Garis batas kartu */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 15px; /* Ruang di dalam kartu */
+    margin: 10px; /* Ruang di antara kartu */
+    width: 200px; /* Lebar kartu */
+    text-align: center; /* Memusatkan teks di dalam kartu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk kartu */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
 }
 
 .film-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px); /* Mengangkat kartu saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam saat hover */
 }
 
 .film-poster {
-    width: 200px; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 5px; 
+    width: 200px; /* Atur lebar gambar */
+    height: 300px; /* Atur tinggi gambar */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+    border-radius: 5px; /* Sudut melengkung */
+}
 
 /* Animasi untuk elemen muncul */
 @keyframes fadeIn {
@@ -141,4 +160,10 @@ p {
 .synopsis-preview {
     display: inline; /* Tampilkan preview sinopsis */
     color: #555; /* Warna teks preview */
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
