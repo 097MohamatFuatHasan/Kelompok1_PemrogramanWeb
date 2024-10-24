@@ -112,16 +112,6 @@ p {
      /* Menambahkan animasi marquee */
 }
 
-/* Animasi untuk teks berjalan */
-@keyframes marquee {
-    0% {
-        transform: translateX(100%); /* Mulai dari luar kanan */
-    }
-    100% {
-        transform: translateX(-100%); /* Bergerak ke luar kiri */
-    }
-}
-
 .popup {
     display: flex;
     justify-content: center;
