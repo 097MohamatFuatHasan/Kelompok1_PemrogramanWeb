@@ -81,7 +81,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   background-color: rgb(225, 214, 231);
   padding: 20px;
   border-radius: 8px;
@@ -91,7 +94,7 @@ img {
 .description {
   padding: 20px;
   width: 65%;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(225, 214, 231);
   border-radius: 3%;
 }
 
