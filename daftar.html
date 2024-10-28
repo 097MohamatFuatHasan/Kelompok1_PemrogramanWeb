@@ -115,7 +115,7 @@
             <h2 id="popup-title"></h2>
             <p id="popup-date"></p>
             <p id="popup-time"></p>
-            <p id="popup-synopsis"></p> <!-- Menampilkan sinopsis lengkap di popup -->
+            <p id="popup-synopsis"></p>
         </div>
     </div>
 
@@ -123,44 +123,36 @@
     function showDetails(title, time, image) {
         const today = new Date();
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-        const formattedDate = today.toLocaleDateString('id-ID', options); // Format tanggal sesuai dengan format Indonesia
+        const formattedDate = today.toLocaleDateString('id-ID', options);
 
         document.getElementById('popup-title').innerText = title;
-        document.getElementById('popup-date').innerText = 'Tanggal: ' + formattedDate; // Tanggal dinamis di popup
+        document.getElementById('popup-date').innerText = 'Tanggal: ' + formattedDate;
         document.getElementById('popup-time').innerText = 'Jam: ' + time;
-        document.getElementById('popup-image').src = image; // Set gambar di popup
+        document.getElementById('popup-image').src = image;
 
-        // Menampilkan sinopsis lengkap di popup
         const synopsis = document.querySelector(`.film-card[onclick*="${title}"] .synopsis`).innerText;
-        document.getElementById('popup-synopsis').innerText = synopsis; // Set sinopsis lengkap di popup
+        document.getElementById('popup-synopsis').innerText = synopsis;
 
-        document.getElementById('film-popup').style.display = 'flex'; // Tampilkan popup
+        document.getElementById('film-popup').style.display = 'flex';
     }
 
-    // Menutup popup ketika area di luar popup diklik
     document.getElementById('film-popup').addEventListener('click', function(event) {
         if (event.target === this) {
-            this.style.display = 'none'; // Sembunyikan popup
+            this.style.display = 'none';
         }
     });
-
-    function closePopup() {
-        document.getElementById('film-popup').style.display = 'none'; // Sembunyikan popup
-    }
 
     function updateFilmDates() {
         const today = new Date();
         const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-        const formattedDate = today.toLocaleDateString('id-ID', options); // Format tanggal sesuai dengan format Indonesia
+        const formattedDate = today.toLocaleDateString('id-ID', options);
 
-        // Mengupdate semua elemen dengan kelas 'film-date'
         const filmDates = document.querySelectorAll('.film-date');
         filmDates.forEach(dateElement => {
-            dateElement.innerText = formattedDate; // Set tanggal ke elemen
+            dateElement.innerText = formattedDate;
         });
     }
 
-    // Panggil fungsi untuk mengupdate tanggal saat halaman dimuat
     updateFilmDates();
     </script>
 </body>
