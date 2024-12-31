@@ -76,10 +76,3 @@ Website ini terdiri dari 3 halaman utama:
 
 ### Dokumentasi Kode
 Penjelasan struktur kode dan fungsi utama tersedia dalam komentar pada setiap file.
-
-## Fungsionalitas JavaScript
-1. **Film Details Popup**
-   ```javascript
-   function showDetails(title, time, image) {
-       // Menampilkan popup dengan detail film
-   }
